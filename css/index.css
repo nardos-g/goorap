@@ -1,0 +1,39 @@
+.vClips {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-right: none;
+    border-left: none;
+    height:max-content;
+    
+    position: absolute;
+    height: 100%;
+    width: 15ch;
+
+}
+
+.tracking {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+}
+
+.articleFrame {
+    background-image: url(../articleBackground.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    padding-top: 5em;
+}
+
+.navigation{
+    width: 70%; 
+    margin:auto;
+}
+
+.menuTab {
+    position: relative;
+    display: none;
+}

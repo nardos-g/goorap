@@ -1,0 +1,23 @@
+{
+    "Ethiopia": {
+        "BahirDar Agent": {
+            "Tel No": "+251912906891",
+            "Email": "info@goorap.com"
+        },
+        "DireDawa Agent": {
+            "Tel No": "+251912906891",
+            "Email": "info@goorap.com"
+        },
+        "Jimma Agent": {
+            "Tel No": "+251912906891",
+            "Email": "info@goorap.com"
+        }
+    },
+    
+    "USA": {
+        "OneBranch": {
+            "Tel No":"+251912906891",
+            "Email":"info@goorap.com"
+        }
+    }
+}

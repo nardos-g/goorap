@@ -1,0 +1,106 @@
+<header class="header">
+    <div>
+        <img class="logo" src="./logo.png" alt="Goorap">
+    </div>
+    <div class="login">
+        <button onclick="signUp()" class="btn">login</button>
+    </div>
+    <div class="account">
+        <input class="mx-sm" placeholder="username" type="username">
+        <input class="mx-sm" placeholder="password" type="password">
+        <button class = "btn login mx-sm">Login</button>
+        <button class="btn signup mx-sm">SignUP</button>
+    </div>
+    <!-- For mobile navigation -->
+    <div class="mobileMenuTab">
+        <button onclick="openMenu()"><i class="material-icons">menu</i></button>
+        <div class="mobileMenu">
+            <ul>
+                <li>HOME</li>
+                <li onclick="openSubMenu(this)">
+                    ABOUT <i class="material-icons">arrow_drop_down</i>
+                    <ul class="mobileMenu-list">
+                        <li>Who we are?</li>
+                        <li>What we are about?</li>
+                        <li>How we go about things?</li>
+                    </ul>
+                </li>
+                <li onclick="openSubMenu(this)" >
+                    OUR SERVICES <i class="material-icons">arrow_drop_down</i>
+                    <ul class="mobileMenu-list">
+                        <li>Goorap Standard</li>
+                        <li>Goorap Express</li>
+                        <li>Goorap +</li>
+                        <li>Goorap Intra City</li>
+                    </ul>
+                </li>
+                <li>QUOTE</li>
+                <li onclick="openSubMenu(this)" >
+                    LOCATION <i class="material-icons">arrow_drop_down</i>
+                    <ul class="mobileMenu-list">
+                        <li>Select Location</li>
+                        <li>Google map</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- modal for mobile signup/login -->
+<div onclick="signUp()" class="modal">
+</div>
+<div class="signUp">
+    <h2>Login/signup</h2>
+    <input class="mx-sm" placeholder="username" type="username">
+    <input class="mx-sm" placeholder="password" type="password">
+    <button class = "btn login mx-sm">Login</button>
+    <button class="btn signup mx-sm">SignUP</button>
+</div>
+<!-- For desktop navigation -->
+<nav class="navigation">
+    <ul style="display: flex; margin: auto; justify-content: space-between;">
+        <li>HOME</li>
+        <li>
+            <div class="menu">
+                ABOUT <i class="material-icons">arrow_drop_down</i>
+                <ul class="menu-list">
+                    <li>Who we are?</li>
+                    <li>What we are about?</li>
+                    <li>How we go about things?</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="menu">
+                OUR SERVICES <i class="material-icons">arrow_drop_down</i>
+                <ul class="menu-list">
+                    <li>Goorap Standard</li>
+                    <li>Goorap Express</li>
+                    <li>Goorap +</li>
+                    <li>Goorap Intra City</li>
+                </ul>
+            </div>
+        </li>
+        <li>QUOTE</li>
+        <li>
+            <div class="menu">
+                LOCATION <i class="material-icons">arrow_drop_down</i>
+                <ul class="menu-list">
+                    <li>Select Location</li>
+                    <li>Google map</li>
+                </ul>
+            </div>
+        </li>
+        <li>HELP</li>
+        <li>FAQ</li>
+        <li>
+            <div class="menu">
+                CONTACT <i class="material-icons">arrow_drop_down</i>
+                <ul class="menu-list">
+                    <li>Get In Touch</li>
+                    <li>Physical Location</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>

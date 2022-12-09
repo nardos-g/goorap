@@ -1,0 +1,23 @@
+@media (max-width: 900px) {
+    .navigation {
+        display: none;
+    }
+    .menuTab {
+        display: block;
+    }
+    .account {
+        display: none;
+    }
+    .login {
+        display: block;
+    }
+    .logo{
+        width: 25%;
+    }
+}
+
+@media (min-width: 901px) {
+    .mobileMenuTab {
+        display: none;
+    }
+}

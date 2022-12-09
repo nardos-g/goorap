@@ -1,0 +1,128 @@
+/* Globals, inputs,buttons, and .... */
+
+input {
+    height: 1.5em;
+    width: 20ch;
+    padding: 1em 1em;
+    border: 1px solid lightblue;
+    border-radius: .2em;
+}
+
+.btn {
+    padding: .3em 1em;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform:uppercase;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+    border-radius: var(--radius);
+}
+
+.btn:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+input:focus-visible {
+    outline: var(--outline);
+    border: 1px solid red
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+article  p {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+article h1 {
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: .2em;
+    color: lightslategray;
+}
+
+article h3 {
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    font-weight: bold;
+    font-size: larg;
+}
+
+footer {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 3em;
+    padding-top: 2em;
+    gap: .5em;
+}
+
+.footerTextBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTextBox h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footerTextBox p {
+    color: white;
+    font-weight: bold;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+}
+
+table, td, th {
+    border: 1px solid white;
+}
+
+table td {
+    text-align: center;
+    padding: .1em 0px;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(115, 199, 248);
+}
+
+table th {
+    background-color: rgb(3, 3, 127);
+    color: white;
+    padding: .2em 0px;
+}
+
+select {
+    padding: .3em 1em;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

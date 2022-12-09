@@ -1,0 +1,304 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+    outline: 1px solid red;
+}   
+
+.account {
+    padding: 1em 3em;
+    margin: 1em;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+img.logo {
+    width: 100%;
+    height: 100%;
+    outline: 1px solid yellow;
+}
+
+.login {
+    /* display: none; */
+}
+
+.menu {
+    position: relative;
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+.menu-list {
+    position: absolute;
+    display: none;
+    box-shadow: 1px 2px 3px 1px;
+    padding: .5em 1em;
+    background-color: white;
+}
+
+.menu-list li{
+    margin: .3em
+}
+
+.menu-list li:hover{
+    background-color: lightgray;
+    padding-left: 1em;
+}
+
+.menu:hover .menu-list {
+    display: block;
+}
+
+.title {
+    margin: 0px 2em
+}
+
+.runy {
+    background-color: red;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.hero {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-color: #3499cc;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.showcase {
+    background-image: url(../showcase.jpg);
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photoGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin: 0px 1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: .5em;
+    row-gap: 1em;
+}
+
+.gridItem {
+    position: relative;
+}
+
+.gridItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.gridItem .offers {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 83, 113);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridItem:hover .offers {
+    z-index: 1000;
+}
+
+.HScroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em 2em;
+}
+
+.Scroll {
+    display: flex;
+    gap: .5em;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    animation-name: horizontalScroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes horizontalScroll {
+    from{
+        background-color: rgb(4, 4, 161);
+    }
+    50%{
+        background-color: rgb(156, 71, 71);
+    }
+    to {
+        background-color: black;
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 35%;
+  scroll-snap-align: start;
+    align-items: center;
+}
+
+.pageNavs {
+    cursor: pointer;
+}
+
+.quote form {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.quote h1 {
+    margin: auto;
+}
+
+.quote {
+    background-color: var(--color-primary);
+    width: 40%;
+    color: white;
+
+    padding: 2em 4em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote input {
+    background-color: var(--color-primary);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.quote input:focus-visible {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.quote select {
+    background-color: var(--color-primary);
+}
+
+.locationSelect {
+    background-color: var(--color-primary);
+    margin-bottom: 3em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2em 0px;
+}
+
+.CSCard img {
+    width: 100%;
+}
+
+.CSCard button {
+    background-color: rgb(2, 2, 85);
+    color: white;
+    width: 100%;
+    padding: .3em 0px;
+}
+
+.contactCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CSCard-container {
+    display: flex;
+    gap: 1em;
+    padding: 1em 3em;
+}
+
+.mobileMenu {
+    position: absolute;
+    background-color: rgb(4, 4, 103);
+    color: white;
+    right: 4em;
+    padding: 2em 3em;
+    display: none;
+}
+
+.mobileMenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+.mobileMenuTab {
+    margin-right: 2em;
+}
+
+.mobileMenu-list {
+    padding-left: 1.5em;
+    display: none;
+}
+
+.modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(211, 211, 211, 0.529);
+    /* 
+    width: fit-content;
+    color: white;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%); */
+    display: none;
+}
+
+.signUp {
+    position: absolute;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(3, 3, 77);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3em;
+    padding: 1em 3em;
+}
